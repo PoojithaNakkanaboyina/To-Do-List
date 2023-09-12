@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App by Poojitha</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css
+    ">
+    <script src="./main.js"></script>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+        <header>
+            <h1>To Do List</h1>
+        </header>
+
+        <!-- Add the task -->
+        <form action="" id="todo-form">
+            <p>Add your Task Here</p>
+            <div class="form-control">
+                <input type="text" name="" id="todo-input" placeholder="Type here your next task">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Edit the task -->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit your Task</p>
+            <div class="form-control">
+                <input type="text" name="" id="edit-input" placeholder="Type here your next task">
+                <button type="submit">
+                    <i class="fa-thin fa-check-double"></i>
+                </button>
+            </div>
+        <button type="button" class="cancel-edit-btn">Cancel</button>
+        </form>
+
+        <!-- Task list -->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3>Some default Task</h3>
+                <button class="finished-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
